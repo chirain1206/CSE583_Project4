@@ -163,7 +163,7 @@ def main(cfg):
         current_location = start_location
         state_history = []
         maze = read_maze_from_csv(MAZE_CSV)
-        print("ITERATION {}".format(iteration+1), end = ' ')
+        print("ITERATION {}".format(iteration+1))
         # Prefetch exploits
         exploit_moves = np.argmax(model.predict(np.identity(num_states)), axis=1)
         # Do a run through the maze
